@@ -1,0 +1,3 @@
+include ':app'
+include ':sdkgroup'
+project(':sdkgroup').projectDir = new File(settingsDir,'../sdkgroup/lib/')
