@@ -47,9 +47,9 @@ android {
 }
 
 dependencies {
-//    implementation project(':sdkgroup') // 调试用
+    implementation project(':yb') // 调试用
 
-    implementation(name: 'by_sdk_1.0.0.0_release', ext: 'aar') // 贝易
+//    implementation(name: 'by_sdk_1.0.0.0_release', ext: 'aar') // 贝易
     implementation 'com.google.code.gson:gson:2.8.5'
 
 

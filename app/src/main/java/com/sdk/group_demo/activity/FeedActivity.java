@@ -12,13 +12,13 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.group.sdk.ad.feed.FeedAdListener;
-import com.group.sdk.ad.feed.FeedAdLoader;
-import com.group.sdk.ad.feed.FeedExpressAdInteractionListener;
-import com.group.sdk.ad.feed.FeedInteractionListener;
-import com.group.sdk.ad.feed.IFeedAd;
-import com.group.sdk.core.GAdSlot;
-import com.group.sdk.core.utils.LogUtil;
+import com.by.sdk.ad.feed.FeedAdListener;
+import com.by.sdk.ad.feed.FeedAdLoader;
+import com.by.sdk.ad.feed.FeedExpressAdInteractionListener;
+import com.by.sdk.ad.feed.FeedInteractionListener;
+import com.by.sdk.ad.feed.IFeedAd;
+import com.by.sdk.core.BYAdSlot;
+import com.by.sdk.core.utils.LogUtil;
 import com.sdk.group_demo.R;
 import com.sdk.group_demo.util.DataUtil;
 
@@ -80,7 +80,7 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
      * @param feedData
      */
     private void loadAd(String feedData) {
-        GAdSlot adSlot = new GAdSlot.Builder()
+        BYAdSlot adSlot = new BYAdSlot.Builder()
                 .setAdJsonData(feedData)
                 .setFetchCount(1)
                 .build();

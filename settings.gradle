@@ -1,3 +1,3 @@
 include ':app'
-include ':sdkgroup'
-project(':sdkgroup').projectDir = new File(settingsDir,'../sdkgroup/lib/')
+include ':yb'
+project(':yb').projectDir = new File(settingsDir,'../yb/lib/')

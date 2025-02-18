@@ -6,13 +6,12 @@ import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.group.sdk.ad.InteractionListener;
-import com.group.sdk.ad.banner.BannerAdListener;
-import com.group.sdk.ad.banner.BannerAdLoader;
-import com.group.sdk.ad.banner.IBannerAd;
-import com.group.sdk.ad.splash.SplashAdLoader;
-import com.group.sdk.core.GAdSlot;
-import com.group.sdk.core.utils.LogUtil;
+import com.by.sdk.ad.InteractionListener;
+import com.by.sdk.ad.banner.BannerAdListener;
+import com.by.sdk.ad.banner.BannerAdLoader;
+import com.by.sdk.ad.banner.IBannerAd;
+import com.by.sdk.core.BYAdSlot;
+import com.by.sdk.core.utils.LogUtil;
 import com.sdk.group_demo.R;
 import com.sdk.group_demo.util.DataUtil;
 
@@ -42,7 +41,7 @@ public class BannerActivity extends AppCompatActivity implements View.OnClickLis
 
     private void loadBanner() {
 
-        GAdSlot adSlot = new GAdSlot.Builder()
+        BYAdSlot adSlot = new BYAdSlot.Builder()
                 .setAdJsonData(DataUtil.getBannerData())
                 .build();
         BannerAdLoader loader = new BannerAdLoader(this, adSlot, new BannerAdListener() {

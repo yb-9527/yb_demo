@@ -6,12 +6,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.group.sdk.ad.reward.IRewardAd;
-import com.group.sdk.ad.reward.RewardAdListener;
-import com.group.sdk.ad.reward.RewardAdLoader;
-import com.group.sdk.ad.reward.RewardInteractionListener;
-import com.group.sdk.core.GAdSlot;
-import com.group.sdk.core.utils.LogUtil;
+import com.by.sdk.ad.reward.IRewardAd;
+import com.by.sdk.ad.reward.RewardAdListener;
+import com.by.sdk.ad.reward.RewardAdLoader;
+import com.by.sdk.ad.reward.RewardInteractionListener;
+import com.by.sdk.core.BYAdSlot;
+import com.by.sdk.core.utils.LogUtil;
 import com.sdk.group_demo.R;
 import com.sdk.group_demo.util.DataUtil;
 
@@ -52,7 +52,7 @@ public class RewardActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     private void loadRewardAd() {
-        GAdSlot adSlot = new GAdSlot.Builder()
+        BYAdSlot adSlot = new BYAdSlot.Builder()
                 .setAdJsonData(DataUtil.getRewardData())
                 .setIsMute(true)
                 .build();

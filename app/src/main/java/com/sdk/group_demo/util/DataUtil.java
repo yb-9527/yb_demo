@@ -1,8 +1,8 @@
 package com.sdk.group_demo.util;
 
+import com.by.sdk.core.bean.GAdInfo;
+import com.by.sdk.core.utils.BYAdContanst;
 import com.google.gson.Gson;
-import com.group.sdk.core.bean.GAdInfo;
-import com.group.sdk.core.utils.GContanst;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,14 +12,14 @@ public class DataUtil {
     public static String getBannerData(){
         List<GAdInfo> list = new ArrayList<>();
         GAdInfo info = new GAdInfo();
-        info.setPlatformName(GContanst.PLATFROM_CSJ);
+        info.setPlatformName(BYAdContanst.PLATFROM_CSJ);
         info.setAppId("5001121");
         info.setPid("901121700");
         info.setPriority(1);
         list.add(info);
 
         GAdInfo gdtInfo = new GAdInfo();
-        gdtInfo.setPlatformName(GContanst.PLATFROM_GDT);
+        gdtInfo.setPlatformName(BYAdContanst.PLATFROM_GDT);
         gdtInfo.setAppId("1101152570");
         gdtInfo.setPid("4080052898050840");
         gdtInfo.setPriority(2);
@@ -32,28 +32,36 @@ public class DataUtil {
     public static String getSplashData(){
         List<GAdInfo> list = new ArrayList<>();
         GAdInfo info = new GAdInfo();
-        info.setPlatformName(GContanst.PLATFROM_CSJ);
+        info.setPlatformName(BYAdContanst.PLATFROM_CSJ);
+        info.setFloorPrice(10);
+        info.setBiddingType(0);
         info.setAppId("5001121");
         info.setPid("801121648");
         info.setPriority(1);
         list.add(info);
 
         GAdInfo gdtInfo = new GAdInfo();
-        gdtInfo.setPlatformName(GContanst.PLATFROM_GDT);
+        gdtInfo.setPlatformName(BYAdContanst.PLATFROM_GDT);
+        gdtInfo.setFloorPrice(10);
+        gdtInfo.setBiddingType(1);
         gdtInfo.setAppId("1101152570");
         gdtInfo.setPid("9093517612222759");
         gdtInfo.setPriority(1);
         list.add(gdtInfo);
 
         GAdInfo bdInfo = new GAdInfo();
-        bdInfo.setPlatformName(GContanst.PLATFROM_BD);
+        bdInfo.setPlatformName(BYAdContanst.PLATFROM_BD);
+        bdInfo.setFloorPrice(30);
+        bdInfo.setBiddingType(1);
         bdInfo.setAppId("e866cfb0");
         bdInfo.setPid("2058622");
         bdInfo.setPriority(1);
         list.add(bdInfo);
 
         GAdInfo ksInfo = new GAdInfo();
-        ksInfo.setPlatformName(GContanst.PLATFROM_KS);
+        ksInfo.setPlatformName(BYAdContanst.PLATFROM_KS);
+        ksInfo.setFloorPrice(40);
+        ksInfo.setBiddingType(1);
         ksInfo.setAppId("90009");
         ksInfo.setPid("4000000042");
         ksInfo.setPriority(1);
@@ -68,28 +76,28 @@ public class DataUtil {
     public static String getRewardData(){
         List<GAdInfo> list = new ArrayList<>();
         GAdInfo info = new GAdInfo();
-        info.setPlatformName(GContanst.PLATFROM_CSJ);
+        info.setPlatformName(BYAdContanst.PLATFROM_CSJ);
         info.setAppId("5001121");
         info.setPid("901121593");
         info.setPriority(1);
         list.add(info);
 
         GAdInfo gdtInfo = new GAdInfo();
-        gdtInfo.setPlatformName(GContanst.PLATFROM_GDT);
+        gdtInfo.setPlatformName(BYAdContanst.PLATFROM_GDT);
         gdtInfo.setAppId("1101152570");
         gdtInfo.setPid("4000898212322043");
         gdtInfo.setPriority(1);
         list.add(gdtInfo);
 
         GAdInfo bdInfo = new GAdInfo();
-        bdInfo.setPlatformName(GContanst.PLATFROM_BD);
+        bdInfo.setPlatformName(BYAdContanst.PLATFROM_BD);
         bdInfo.setAppId("e866cfb0");
         bdInfo.setPid("5925490");
         bdInfo.setPriority(1);
         list.add(bdInfo);
 
         GAdInfo ksInfo = new GAdInfo();
-        ksInfo.setPlatformName(GContanst.PLATFROM_KS);
+        ksInfo.setPlatformName(BYAdContanst.PLATFROM_KS);
         ksInfo.setAppId("90009");
         ksInfo.setPid("90009001");
         ksInfo.setPriority(1);
@@ -104,28 +112,28 @@ public class DataUtil {
     public static String getIntertitialData(){
         List<GAdInfo> list = new ArrayList<>();
         GAdInfo info = new GAdInfo();
-        info.setPlatformName(GContanst.PLATFROM_CSJ);
+        info.setPlatformName(BYAdContanst.PLATFROM_CSJ);
         info.setAppId("5001121");
         info.setPid("947793385");
         info.setPriority(1);
         list.add(info);
 
         GAdInfo gdtInfo = new GAdInfo();
-        gdtInfo.setPlatformName(GContanst.PLATFROM_GDT);
+        gdtInfo.setPlatformName(BYAdContanst.PLATFROM_GDT);
         gdtInfo.setAppId("1101152570");
         gdtInfo.setPid("4080298282218338");
         gdtInfo.setPriority(1);
         list.add(gdtInfo);
 
         GAdInfo bdInfo = new GAdInfo();
-        bdInfo.setPlatformName(GContanst.PLATFROM_BD);
+        bdInfo.setPlatformName(BYAdContanst.PLATFROM_BD);
         bdInfo.setAppId("e866cfb0");
         bdInfo.setPid("2403633");
         bdInfo.setPriority(1);
         list.add(bdInfo);
 
         GAdInfo ksInfo = new GAdInfo();
-        ksInfo.setPlatformName(GContanst.PLATFROM_KS);
+        ksInfo.setPlatformName(BYAdContanst.PLATFROM_KS);
         ksInfo.setAppId("90009");
         ksInfo.setPid("4000000276");
         ksInfo.setPriority(1);
@@ -140,7 +148,7 @@ public class DataUtil {
     public static String getFeedExpressData(){
         List<GAdInfo> list = new ArrayList<>();
         GAdInfo info = new GAdInfo();
-        info.setPlatformName(GContanst.PLATFROM_CSJ);
+        info.setPlatformName(BYAdContanst.PLATFROM_CSJ);
         info.setAppId("5001121");
         info.setPid("901121253");//自渲染和模板广告位不同
         info.setFeedType(2);//模板feedType=2
@@ -148,7 +156,7 @@ public class DataUtil {
         list.add(info);
 
         GAdInfo gdtInfo = new GAdInfo();
-        gdtInfo.setPlatformName(GContanst.PLATFROM_GDT);
+        gdtInfo.setPlatformName(BYAdContanst.PLATFROM_GDT);
         gdtInfo.setAppId("1101152570");
         gdtInfo.setPid("7030020348049331");
         gdtInfo.setFeedType(2);
@@ -156,7 +164,7 @@ public class DataUtil {
         list.add(gdtInfo);
 
         GAdInfo bdInfo = new GAdInfo();
-        bdInfo.setPlatformName(GContanst.PLATFROM_BD);
+        bdInfo.setPlatformName(BYAdContanst.PLATFROM_BD);
         bdInfo.setAppId("e866cfb0");
         bdInfo.setPid("8035132");
         bdInfo.setFeedType(2);
@@ -164,7 +172,7 @@ public class DataUtil {
         list.add(bdInfo);
 
         GAdInfo ksInfo = new GAdInfo();
-        ksInfo.setPlatformName(GContanst.PLATFROM_KS);
+        ksInfo.setPlatformName(BYAdContanst.PLATFROM_KS);
         ksInfo.setAppId("90009");
         ksInfo.setPid("4000000004");
         ksInfo.setFeedType(2);
@@ -179,7 +187,7 @@ public class DataUtil {
     public static String getFeedNativeData(){
         List<GAdInfo> list = new ArrayList<>();
         GAdInfo info = new GAdInfo();
-        info.setPlatformName(GContanst.PLATFROM_CSJ);
+        info.setPlatformName(BYAdContanst.PLATFROM_CSJ);
         info.setAppId("5001121");
         info.setPid("901121737");//自渲染和模板广告位不同
         info.setFeedType(1);//自渲染feedType=1
@@ -187,7 +195,7 @@ public class DataUtil {
         list.add(info);
 
         GAdInfo gdtInfo = new GAdInfo();
-        gdtInfo.setPlatformName(GContanst.PLATFROM_GDT);
+        gdtInfo.setPlatformName(BYAdContanst.PLATFROM_GDT);
         gdtInfo.setAppId("1101152570");
         gdtInfo.setPid("9091145780212745");
         gdtInfo.setFeedType(1);//自渲染feedType=1
@@ -195,7 +203,7 @@ public class DataUtil {
         list.add(gdtInfo);
 
         GAdInfo bdInfo = new GAdInfo();
-        bdInfo.setPlatformName(GContanst.PLATFROM_BD);
+        bdInfo.setPlatformName(BYAdContanst.PLATFROM_BD);
         bdInfo.setAppId("e866cfb0");
         bdInfo.setPid("2058628");
         bdInfo.setFeedType(1);//自渲染feedType=1
@@ -203,7 +211,7 @@ public class DataUtil {
         list.add(bdInfo);
 
         GAdInfo ksInfo = new GAdInfo();
-        ksInfo.setPlatformName(GContanst.PLATFROM_KS);
+        ksInfo.setPlatformName(BYAdContanst.PLATFROM_KS);
         ksInfo.setAppId("90009");
         ksInfo.setPid("4000001377");
         ksInfo.setFeedType(1);//自渲染feedType=1

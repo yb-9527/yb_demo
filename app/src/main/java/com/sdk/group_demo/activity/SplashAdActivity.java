@@ -8,12 +8,12 @@ import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.group.sdk.ad.splash.ISplashAd;
-import com.group.sdk.ad.splash.SplashAdListener;
-import com.group.sdk.ad.splash.SplashAdLoader;
-import com.group.sdk.ad.splash.SplashInteractionListener;
-import com.group.sdk.core.GAdSlot;
-import com.group.sdk.core.utils.LogUtil;
+import com.by.sdk.ad.splash.ISplashAd;
+import com.by.sdk.ad.splash.SplashAdListener;
+import com.by.sdk.ad.splash.SplashAdLoader;
+import com.by.sdk.ad.splash.SplashInteractionListener;
+import com.by.sdk.core.BYAdSlot;
+import com.by.sdk.core.utils.LogUtil;
 import com.sdk.group_demo.R;
 import com.sdk.group_demo.util.DataUtil;
 
@@ -53,7 +53,7 @@ public class SplashAdActivity extends AppCompatActivity implements View.OnClickL
         DisplayMetrics dm = getResources().getDisplayMetrics();
         getWindowManager().getDefaultDisplay().getRealMetrics(dm);
         int bottomHeight = (int) (120 * dm.density);
-        GAdSlot adSlot = new GAdSlot.Builder()
+        BYAdSlot adSlot = new BYAdSlot.Builder()
                 .setAdJsonData(DataUtil.getSplashData())
                 .setWidth(dm.widthPixels)
                 .setHeight(dm.heightPixels-bottomHeight)

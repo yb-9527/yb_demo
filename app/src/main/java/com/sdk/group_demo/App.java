@@ -6,21 +6,19 @@ import android.location.Location;
 
 import androidx.multidex.MultiDex;
 
-import com.bytedance.sdk.openadsdk.LocationProvider;
-import com.group.sdk.core.GAdConfig;
-import com.group.sdk.core.GAdSdk;
 
-import java.util.List;
+import com.by.sdk.core.BYAdConfig;
+import com.by.sdk.core.BYAdSdk;
 
 public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
 
-        GAdConfig config = new GAdConfig.Builder()
+        BYAdConfig config = new BYAdConfig.Builder()
                 .setAppId("111")
                 .setEnableDebug(true)
-                .customController(new GAdConfig.CustomController() {
+                .customController(new BYAdConfig.CustomController() {
                     @Override
                     public String getOaid() {
                         return super.getOaid();
@@ -104,7 +102,7 @@ public class App extends Application {
                     }
                 })
                 .build();
-        GAdSdk.init(this, config);
+        BYAdSdk.init(this, config);
     }
 
     protected void attachBaseContext(Context base) {

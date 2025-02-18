@@ -6,13 +6,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.group.sdk.ad.intertitial.IIntertitialAd;
-import com.group.sdk.ad.intertitial.IntertitialAd;
-import com.group.sdk.ad.intertitial.IntertitialAdListener;
-import com.group.sdk.ad.intertitial.IntertitialAdLoader;
-import com.group.sdk.ad.intertitial.IntertitialInteractionListener;
-import com.group.sdk.core.GAdSlot;
-import com.group.sdk.core.utils.LogUtil;
+import com.by.sdk.ad.intertitial.IIntertitialAd;
+import com.by.sdk.ad.intertitial.IntertitialAdListener;
+import com.by.sdk.ad.intertitial.IntertitialAdLoader;
+import com.by.sdk.ad.intertitial.IntertitialInteractionListener;
+import com.by.sdk.core.BYAdSlot;
+import com.by.sdk.core.utils.LogUtil;
 import com.sdk.group_demo.R;
 import com.sdk.group_demo.util.DataUtil;
 
@@ -50,7 +49,7 @@ public class IntertitialActivity extends AppCompatActivity implements View.OnCli
     }
 
     private void loadIntertitialAd() {
-        GAdSlot adSlot = new GAdSlot.Builder()
+        BYAdSlot adSlot = new BYAdSlot.Builder()
                 .setAdJsonData(DataUtil.getIntertitialData())
                 .build();
         IntertitialAdLoader loader = new IntertitialAdLoader(this,adSlot, new IntertitialAdListener() {
