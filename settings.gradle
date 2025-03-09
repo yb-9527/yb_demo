@@ -1,0 +1,3 @@
+include ':app'
+include ':yb'
+project(':yb').projectDir = new File(settingsDir,'../yb/lib/')
